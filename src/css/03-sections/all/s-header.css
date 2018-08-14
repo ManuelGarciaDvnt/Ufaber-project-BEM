@@ -1,0 +1,14 @@
+.s-header{
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.s-header a{
+    width: 100px;
+}
+
+.s-header a .logo img{
+    height: 100%;
+    min-width: 100%;
+    background-color: rebeccapurple;
+}
