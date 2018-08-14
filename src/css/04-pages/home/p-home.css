@@ -1,0 +1,20 @@
+@import '../../00-toolbox/general.css';
+@import '../../01-elements/e-button.css';
+
+.s-cover{
+    background: url("../../../assets/img/ufaber-bg-phone.jpg");
+    position: absolute;
+}
+
+.home-header{
+    position: absolute;
+    z-index: 1;
+}
+.home-header .logo{
+    width: 50%;
+}
+.home-header .logo img{
+    width: 150px;
+    height: 50px;
+}
+
