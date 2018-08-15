@@ -2,6 +2,7 @@
     border-radius: 45px;
     border: solid 2px transparent;
     padding: 5px 20px;
+    margin: 0 5px;
     min-height: 40px;
     display: inline-flex;
     justify-content: center;

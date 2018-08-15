@@ -14,11 +14,10 @@
 }
 
 .s-header a{
-    width: 100px;
+    width: 120px;
 }
 
-.s-header .logo{
-    margin: auto;
+.s-header .s-header__logo{
     padding: 5px;
     height: 50px;
     width: 100%;
@@ -31,7 +30,7 @@
     
     .s-header__nav{
         display: flex;
-        width: 220px;
+        width: 250px;
         justify-content: space-around;
     }
     
