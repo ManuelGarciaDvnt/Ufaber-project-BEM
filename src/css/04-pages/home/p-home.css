@@ -2,15 +2,19 @@
 @import '../../01-elements/e-button.css';
 @import '../../03-sections/all/s-header.css';
 @import '../../03-sections/home/s-cover.css';
+@import '../../03-sections/home/s-slider.css';
 @import '../../03-sections/all/s-footer.css';
 
 .s-cover{
     background: url("../../../assets/img/ufaber-bg-phone.jpg");
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     height: 100vh;
 }
+.s-slider{
+    background: url("../../../assets/img/ufaber-bg.jpg");
+}
+
 @media screen and (min-width:610px){
     .s-cover{
         background: url("../../../assets/img/ufaber-bg-desktop.jpg");
