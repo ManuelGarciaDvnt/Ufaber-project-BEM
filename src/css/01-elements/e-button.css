@@ -25,7 +25,7 @@
 }
 .e-button.e-button--transparent{
     color: var(--color-text-light);
-    background-color: transparent;
+    background-color: var(--color-gray-transparent);
     border: solid 2px var(--color-border-gray);
 }
 .e-button.e-button--transparent:hover{
