@@ -27,4 +27,10 @@
     background-color: transparent;
     border: solid 2px var(--color-border-gray);
 }
+.e-button.e-button--transparent:hover{
+    background-color: var(--color-border-gray);
+    color: var(--color-text-light);
+    border: solid 2px var(--color-sky);
+    transition-duration: .5s;
+}
 

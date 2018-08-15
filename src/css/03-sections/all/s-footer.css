@@ -8,6 +8,9 @@
 .s-cover__footer i svg{
     height: 20px;
 }
+.s-cover__icon svg:hover{
+    fill: var(--color-text-light);
+}
 
 
 

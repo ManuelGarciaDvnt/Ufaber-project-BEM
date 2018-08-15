@@ -11,6 +11,23 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+@media screen and (min-width:610px){
+    .s-cover{
+        background: url("../../../assets/img/ufaber-bg-desktop.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+}
+@media screen and (min-width:860px){
+    .s-cover__main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
 
 
 
