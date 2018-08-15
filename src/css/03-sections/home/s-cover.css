@@ -42,45 +42,33 @@
     .s-cover__main{
         margin-bottom: 120px;
     }
-
+}
+@media screen and (min-width:950px){
+    .s-cover__main{
+        margin-bottom: 400px;
+    }
+    .s-cover__description{
+        margin-bottom: 80px;
+    }
 }
 
-
-
-
-/*
-.logo img{
-    width: 100%;
-    height: 40px;
-}
-.home-header nav{
-    display: none;
-}
-.main{
-    color: white;
-    padding: 30px;
-    margin-bottom: 70px;
-}
-.main .sentence{
-    text-align: center;
-    margin-bottom: 90px;
-}
-
-.main .sentence h1{
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.button-link svg{
-    fill: white;
-    height: 15px;
-}
-
-
-footer{
+.s-cover__footer{
     display: flex;
     justify-content: center;
+    background-color:rgba(0, 0, 255, 0);
+    width: 100%;
+    margin-bottom: 50px;
+    position: absolute;
+    bottom: 0;
 }
-.icon-arrow{
-    height: 17px;
-} */
+.s-cover__icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.s-cover__icon svg path{
+    fill: var(--color-text-light);
+}
+.s-cover__icon:hover{
+    opacity: 0.6;
+}

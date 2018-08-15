@@ -6,15 +6,16 @@
 
 .s-cover{
     background: url("../../../assets/img/ufaber-bg-phone.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
 }
 @media screen and (min-width:610px){
     .s-cover{
         background: url("../../../assets/img/ufaber-bg-desktop.jpg");
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         height: 100vh;
     }
