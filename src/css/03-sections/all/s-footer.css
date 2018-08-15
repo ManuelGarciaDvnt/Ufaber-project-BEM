@@ -1,0 +1,13 @@
+.s-cover__footer{
+    display: flex;
+    justify-content: center;
+    background-color:rgba(0, 0, 255, 0);
+    width: 100%;
+    padding: 0px 10px;
+}
+.s-cover__footer i svg{
+    height: 20px;
+}
+
+
+

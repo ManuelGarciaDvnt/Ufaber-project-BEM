@@ -1,42 +1,40 @@
-.container{
-    background: url("../../assets/img/ufaber-bg-phone.jpg");
-    font-family: 'Lato'700,sans-serif;
-    border: solid 1px black;
-    width: 100%;
-    height: 1000px;
-    position: relative;
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
-}
-.background-desktop{
-    display: none;
-    height: 100%;
-    width: 100%;
-    background-size: 100% 100%;
-    position: absolute;
-    z-index: -1;
-}
-.background-phone{
-    
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    margin: 0 auto;
-    z-index: -1;
-}
-.background-phone img{
-    width: 100%;
-    height: 700px;
-} 
-
-.home-header{
+.s-cover{
+    padding: 100px 10px 10px 10px;
     display: flex;
-    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    height: 79%;
 }
-.home-header .logo{
-    margin: auto;
-    width: 160px;
+
+.s-cover__main{
+    text-align: center;
+    background-color: rgba(255, 196, 0, 0);
+    margin-bottom: 30px;
 }
+.s-cover__text-title{
+    margin-bottom: 40px;
+}
+.s-cover__description{
+    padding: 0px 29px;
+    margin-bottom: 50px;
+}
+.s-cover__button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.s-cover__button-container a{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*
 .logo img{
     width: 100%;
     height: 40px;
@@ -71,4 +69,4 @@ footer{
 }
 .icon-arrow{
     height: 17px;
-}
+} */

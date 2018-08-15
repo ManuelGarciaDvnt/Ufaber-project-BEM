@@ -1,14 +1,25 @@
 .s-header{
     display: flex;
-    position: relative;
-    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;    
+    background-color: rgba(255, 0, 0, 0);
+    width: 100%;
 }
+.s-header__nav{
+    display: none;
+}
+
 .s-header a{
     width: 100px;
 }
 
-.s-header a .logo img{
-    height: 100%;
-    min-width: 100%;
-    background-color: rebeccapurple;
+.s-header .logo{
+    margin: auto;
+    padding: 5px;
+    height: 50px;
+    width: 100%;
 }
