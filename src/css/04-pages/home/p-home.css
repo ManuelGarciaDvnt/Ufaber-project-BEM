@@ -6,7 +6,7 @@
 
 .s-cover{
     background: url("../../../assets/img/ufaber-bg-phone.jpg");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
