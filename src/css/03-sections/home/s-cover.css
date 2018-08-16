@@ -31,8 +31,8 @@
     justify-content: center;
     background-color:rgba(0, 0, 255, 0);
     width: 100%;
-    margin-bottom: 50px;
-    position: absolute;
+    margin-bottom: 30px;
+    position: fixed;
     bottom: 0;
 }
 .s-cover__icon{
