@@ -13,6 +13,9 @@
 }
 .s-slider{
     background: url("../../../assets/img/ufaber-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 @media screen and (min-width:610px){
