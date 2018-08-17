@@ -1,18 +1,29 @@
 .s-slider{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    border: solid 5px rgba(0, 0, 255, 0);
+    justify-content: space-between;
     /* background-color: rgb(161, 161, 161); */
-
 }
 .s-slider__header{
-    background-color: #947777;
+    background-color: #94777700;
     text-align: center;
+    color: var(--color-text-dark);
+    padding: 20px;
+}
+.s-slider__header--invisible{
     display: none;
+}
+.s-slider__title{
+    margin-bottom: 10px;
+    font-size: 12.5px;
+}
+.s-slider__description{
+    font-size: 14.2px;
 }
 
 .s-slider__group{
-    background-color: rgb(238, 255, 0);
+    background-color: rgba(238, 255, 0, 0);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -21,28 +32,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(150, 68, 68);
+    background-color: rgba(150, 68, 68, 0);
 }
+/* Galeria */
+
 .s-slider__gallery{
     background-color: #fff;
-    height: 400px;
-    width: 400px;
+    box-shadow: 0px 0px 8px gray;
+    height: 280px;
+    width: 300px;
     margin: 0 auto;
 }
 .s-slider__footer{
-    background-color: rgba(47, 105, 170, 0.692);
-
-}
-.s-slider__header--invisible{
-    display: none;
+    background-color: rgba(47, 104, 170, 0);
+    border: solid 9px rgba(0, 128, 0, 0);
 }
 
 .s-slider__list{
-    background-color: var(--color-text-dark);
-    height: 10vh;
+    background-color: rgba(99, 145, 29, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    font-size: 14px;
     width: 100%;
     text-align: center;
+    color: var(--color-text-dark);
 }
+
+.s-slider__link::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-sky);
+}
+.s-slider__link{
+}
+
+
 .s-slider__button-container{
     display: flex;
     justify-content: center;
@@ -57,13 +85,25 @@
     .s-slider__header--invisible{
         text-align: center;
         display: block;
+        margin-bottom: 46px;
     }
     .s-slider__group{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         height: 100vh;
     }
+    .s-slider__footer{
+        margin-left: 30px;
+    }
 
+    .s-slider__list{
+        height: 60vh;
+    }
+    .s-slider__button-container{
+        justify-content: start;
+        padding-top:30px; 
+    }
 
 
 }
