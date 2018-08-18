@@ -6,11 +6,14 @@
     <meta name="description" content="Home principal">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/slick.js"></script>
     <link rel="stylesheet" href="../css/04-pages/home/p-home.css">
+    <link rel="stylesheet" href="../css/00-toolbox/slick.css">
+    <link rel="stylesheet" href="../css/00-toolbox/slick-theme.css">
     <title>Ufaber - Home</title>
 </head>
 <body>
-    <header class="s-header">
+    <header id="s-header__menu" class="s-header">
         <a href="#">
             <figure class="s-header__logo">
                 <img src="../assets/img/ufaber-logo.png" alt="">
@@ -86,7 +89,28 @@
             <div class="s-slider__group">
                 <main class="s-slider__main">
                     <div class="s-slider__gallery">
-                        Image
+                        1
+                    </div>
+                    <div class="s-slider__gallery">
+                        2
+                    </div>
+                    <div class="s-slider__gallery">
+                        3
+                    </div>
+                    <div class="s-slider__gallery">
+                        4
+                    </div>
+                    <div class="s-slider__gallery">
+                        5
+                    </div>
+                    <div class="s-slider__gallery">
+                        6
+                    </div>
+                    <div class="s-slider__gallery">
+                        7
+                    </div>
+                    <div class="s-slider__gallery">
+                        8
                     </div>
                 </main>
                 <footer class="s-slider__footer">
@@ -100,37 +124,76 @@
                             <p>A unique learning enviroment designed to get your best results</p>
                         </div>
                     </div>
-                    <div class="s-slider__list">
-                            <ul>
-                                <!-- <li>
-                                    <a href="javascript:;">Amazing quality video content by superb instructors.</a>
+                    <nav class="s-slider__list">
+                            <span class="s-slider__text-box">
+                                     Well researched pedagogy for each course.
+                            </span>    
+                            <ul class="s-slider__list-links">
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="Amazing quality video content by superb instructors.">
+                                        <span class="s-slider__text-link">
+                                             Amazing quality video content by superb instructors.
+                                        </span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="javascript:;">24x7 acces to your personal coach.</a>
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="24x7 acces to your personal coach.">
+                                        <span class="s-slider__text-link">
+                                             24x7 acces to your personal coach.
+                                        </span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="javascript:;">Intelligent monitoring and planning system.</a>
-                                </li> -->
-                                <li>
-                                    <a href="javascript:;" class="s-slider__link">Well researched pedagogy for each course.</a>
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="Intelligent monitoring and planning system.">
+                                        <span class="s-slider__text-link">
+                                             Intelligent monitoring and planning system.
+                                        </span>
+                                    </a>
                                 </li>
-                                <!-- <li>
-                                    <a href="javascript:;">Lifetime acces to the comunity of smart learnes like you.</a>
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="Well researched pedagogy for each course.">
+                                        <span class="s-slider__text-link">
+                                             Well researched pedagogy for each course.
+                                        </span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="javascript:;">Unique combination of self & guided learning.</a>
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="Lifetime acces to the comunity of smart learnes like you.">
+                                        <span class="s-slider__text-link">
+                                             Lifetime acces to the comunity of smart learnes like you.
+                                        </span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="javascript:;">Have fun with gamified & social learning.</a>
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="Unique combination of self & guided learning.">
+                                        <span class="s-slider__text-link">
+                                             Unique combination of self & guided learning.
+                                        </span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="javascript:;">Learn anything from anywhere.</a>
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="Have fun with gamified & social learning.">
+                                        <span class="s-slider__text-link">
+                                             Have fun with gamified & social learning.
+                                        </span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="javascript:;">Everything that offline education cant delivered.</a>
-                                </li> -->
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="Learn anything from anywhere.">
+                                        <span class="s-slider__text-link">
+                                             Learn anything from anywhere.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="s-slider_list-item">
+                                    <a href="javascript:;" class="s-slider__link" data-text="Everything that offline education cant delivered.">
+                                        <span class="s-slider__text-link">
+                                             Everything that offline education cant delivered.
+                                        </span>
+                                    </a>
+                                </li>
                             </ul>
-                    </div>
+                        </nav>
                     <div class="s-slider__button-container">
                         <a href="javascript:;" class="e-button e-button--skyblue">
                             <span class="e-button__text">
@@ -148,8 +211,11 @@
                         </div>
                         
                 </footer>
-            </div>
 
+            </div>
+            <figure class="s-slider__penbox">
+                <img src="../assets/img/pen-box.png" alt="">
+            </figure>
 
         </section>
         <section class="s-courses">
