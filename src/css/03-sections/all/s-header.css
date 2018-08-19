@@ -7,16 +7,14 @@
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1;
-    transition: all 950.6s;
-    -webkit-transition: all 99950.6s;
-    -moz-transition: all 950.6s;
-    -ms-transition: all 950.6s;
-    -o-transition: all 950.6s;
-    opacity: 0;
+    z-index: 11;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
 }
 .s-header.s-header--sticky{
-    opacity: 1;
     background-color: var(--color-background-dark);
     box-shadow: 10px 0px 9px var(--color-text-dark); 
     padding-bottom: 16px;
