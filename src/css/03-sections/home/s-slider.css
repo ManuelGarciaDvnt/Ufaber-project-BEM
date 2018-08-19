@@ -170,6 +170,7 @@
     left: -202px;
     height: 300px;
     width: 300px;
+    z-index: 10;
 }
 .s-slider__penbox img{
     height: 100%;
