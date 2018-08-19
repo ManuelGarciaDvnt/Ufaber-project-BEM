@@ -11,6 +11,14 @@ var sentence7=$(".s-slider__link")[6].getAttribute("data-text");
 var sentence8=$(".s-slider__link")[7].getAttribute("data-text");
 var sentence9=$(".s-slider__link")[8].getAttribute("data-text");
 
+//Card-Array
+var cards=$(".s-slider__card");
+$(cards[8]).addClass('s-slider__card--top');
+$(cards[7]).addClass('s-slider__card--central');
+$(cards[6]).addClass('s-slider__card--back');
+
+
+
 
 $(function(){
     if($(window).scrollTop()>100){
