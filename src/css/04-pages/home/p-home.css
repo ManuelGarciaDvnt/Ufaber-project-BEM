@@ -3,6 +3,7 @@
 @import '../../03-sections/all/s-header.css';
 @import '../../03-sections/home/s-cover.css';
 @import '../../03-sections/home/s-slider.css';
+@import '../../03-sections/home/s-courses.css';
 @import '../../03-sections/all/s-footer.css';
 
 .s-cover{

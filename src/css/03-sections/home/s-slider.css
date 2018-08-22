@@ -48,7 +48,7 @@
 }
 .s-slider__card.s-slider__card--top{
     z-index: 9;
-    top: 25px;
+    top: 15px;
     transform: scale(1.05);
     box-shadow: 0px 0px 5px var(--color-text-dark);
     -webkit-transform: scale(1.05);
@@ -63,32 +63,30 @@
 .s-slider__card.s-slider__card--back{
     box-shadow: 0px 0px 5px var(--color-text-dark);
     z-index: 7;
-    top: -23px;
+    top: -16px;
     transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -moz-transform: scale(0.95);
     -ms-transform: scale(0.95);
     -o-transform: scale(0.95);
 }
+.s-slider__picture{
+    width: 100%;
+    height: 100%;
+}
 .s-slider__image{
-    background-image: url("../../../assets/img/img9.jpg");
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100%;
 }
 
-
 .s-slider__footer{
-    background-color: rgba(47, 104, 170, 0);
     padding-top: 35px;
 }
 
 .s-slider__list{
-    background-color: rgba(99, 145, 29, 0);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 15vh;
     font-size: 14px;
@@ -111,12 +109,6 @@
         opacity: 1;
     }
 }
-.s-slider__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
 
 .s-slider__list-item{
     float: left;
@@ -125,7 +117,7 @@
 
 .s-slider__link{
     display: flex;
-    height: 50px;
+    height: 33px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -153,8 +145,8 @@
 .s-slider__link:active.s-slider__link::after{
     background-color: var(--color-sky);
 }
-.s-slider__link.s-slider__link--active{
-    background-color: var(--color-sky);
+.s-slider__text-link.s-slider__text-link--active{
+    font-weight: bold;
 }
 .s-slider__text-link{
     display: none;
@@ -182,9 +174,12 @@
         display: none;
     }
     .s-slider__header--invisible{
-        text-align: center;
+        
         display: block;
         margin-bottom: 46px;
+    }
+    .s-slider__text-title, .s-slider__description{
+        padding-left:  25px;
     }
     
     .s-slider__group{
@@ -202,7 +197,7 @@
     }
     
     .s-slider__card {
-        height: 462px;
+        height: 459px;
         width: 100%;
     }
 
@@ -272,9 +267,8 @@
     }
     .s-slider__button-container{
         justify-content: start;
-        /* padding-top:30px;  */
+        padding-top:50px; 
     }
-
 
 }
 
@@ -282,8 +276,9 @@
     .s-slider__main{
         width: 98%;
     }
-    .s-slider__gallery{
+    .s-slider__card{
         height: 100%;
         width: 100%;
+        padding-bottom: 20%;
     }
 }
