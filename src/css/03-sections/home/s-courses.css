@@ -145,9 +145,21 @@
 .s-courses__price.s-courses__price--free{
     color: var(--color-green);
 }
+.s-courses__price.s-courses__price--expensive{
+    color: var(--color-text-dark);
+}
+.s-courses__price-icon{
+    width: 31px;
+    height: 31px;
+    background: url("../../../assets/icons/icons.png");
+    background-position: 0px 466px;
+}
+
 .s-courses__price-text{
     font-weight: bold;
 }
+
+
 .s-courses__footer{
     width: 100vh;
     position: absolute;
