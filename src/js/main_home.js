@@ -11,7 +11,7 @@ var sentence7=$(".s-slider__link")[6].getAttribute("data-text");
 var sentence8=$(".s-slider__link")[7].getAttribute("data-text");
 var sentence9=$(".s-slider__link")[8].getAttribute("data-text");
 
-var src1=$(".s-slider__link")[0].getAttribute("data-src");
+/*var src1=$(".s-slider__link")[0].getAttribute("data-src");
 var src2=$(".s-slider__link")[1].getAttribute("data-src");
 var src3=$(".s-slider__link")[2].getAttribute("data-src");
 var src4=$(".s-slider__link")[3].getAttribute("data-src");
@@ -19,7 +19,7 @@ var src5=$(".s-slider__link")[4].getAttribute("data-src");
 var src6=$(".s-slider__link")[5].getAttribute("data-src");
 var src7=$(".s-slider__link")[6].getAttribute("data-src");
 var src8=$(".s-slider__link")[7].getAttribute("data-src");
-var src9=$(".s-slider__link")[8].getAttribute("data-src");
+var src9=$(".s-slider__link")[8].getAttribute("data-src");*/
 
 
 //Card-Array
@@ -44,8 +44,6 @@ $(function(){
         else
             $('#s-header__menu').removeClass('s-header--sticky');
     });
-    
-
 });
 
 var buttons_link=$(".s-slider__link");
@@ -165,5 +163,7 @@ btn_9.click(function(){
     sentence_container.text(sentence9);
 });
 
-
+$(".s-courses__heart").click(function(){
+    $(".s-courses__heart").toggleClass("s-courses__heart--active");
+});
 
