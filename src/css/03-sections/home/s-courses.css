@@ -30,11 +30,18 @@
     height: 85%;
     width: 100vw;
     position: relative;
-    overflow: hidden;
     display: flex;
-    justify-content: center;
-    padding: 0px 40px;
+    justify-content: flex-start;
+    padding: 0px 30px;
+    overflow: auto;
+    flex-wrap: nowrap;
+    margin-right: 30px;
 }
+.s-courses__cards-container::-webkit-scrollbar{
+    display: none;
+}
+
+
 .s-courses__card{
     background-color: rgb(255, 255, 255);
     height: 99%;
@@ -161,13 +168,13 @@
 
 
 .s-courses__footer{
-    width: 100vh;
+    width: 100%;
     position: absolute;
     bottom: 0px;
     margin-bottom: 50px;
 }
 .s-courses__button-container{
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
