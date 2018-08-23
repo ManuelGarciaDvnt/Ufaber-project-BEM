@@ -1,59 +1,72 @@
 (function(){
     var st= {
     //Declaracion de selectores
-    containerCard  : 'js-slider__main',
-    card           : 'js-slider__card',
-    itemList       : 'js-slider__list-item',
-    textBox        : 'js-slider__text-box',
+    containerCard  : '.js-slider__main',
+    card           : '.js-slider__card',
+    image          : '.js-slider__image',
+    itemList       : '.js-slider__list-item',
+    itemLink       : '.js-slider__link',
+    textBox        : '.js-slider__text-box',
     active         : 'js-isActive',
     //imagenes a utilizar
-    images         : [],
-    courseImages   : []
+    sliderData     : []
     }
     var dom={}
     var catchDom=function(){
         dom.containerCard = $(st.containerCard);
         dom.card          = $(st.card);
+        dom.image         = $(st.image);
         dom.itemList      = $(st.itemList);
+        dom.itemLink      = $(st.itemLink,dom.itemList);
         dom.textBox       = $(st.textBox);
     }
 
     var suscribeEvents=function(){
-        dom.item_list.on('click',events.changeColor);
+        dom.itemLink.on('click',events.changeUrl);
     }
 
     var events={
-        changeUrl: function(){
-        
-        },
-        changeSentence: function(){
-        
-        },
-        changeColor:function(){
-        dom.card.css('background-color','green');
+        changeUrl : function(){
+            var $this=$(this);
+            var index=$this.data("index");
+            console.log(st.sliderData[index]);
+            
         }
+        
     }
 
     //funciones reutilizables
     var fn={
         
-        loadImages(){
-            st.images       = ['../assets/img/img1.jpg', '../assets/img/img2.jpg', '../assets/img/img3.jpg', '../assets/img/img4.jpg', '../assets/img/img5.jpg', '../assets/img/img6.jpg', '../assets/img/img7.jpg', '../assets/img/img8.jpg','../assets/img/img9.jpg']
-            st.courseImages = ['',''];
+        loadSliderData(){
+            $.each(dom.itemLink, function(index, value) {                
+                var elem = $(value);
+                
+                elem.data('index',index);
+                var item = {
+                    srcImage: elem.data("src"),
+                    text: elem.data("text")
+                };
+                st.sliderData[index] = item;
+            });            
+            console.log(st.sliderData[0].srcImage);
+        },
+        loadSentences(){
+            for(i=0;i<sliderData.length;i++){
+                dom.image.attr('src',st.sliderData[i].srcImage);
+            }
         }
+
     }
 
     var initialice=function(){
         catchDom();
         suscribeEvents();
-        fn.loadImages();
+        fn.loadSliderData();
+        console.log(st.sliderData);
     }
 
-    return{
-        init:initialice
-    }
-
-    init();
+    initialice();
 
 
 })();

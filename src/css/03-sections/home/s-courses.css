@@ -188,6 +188,12 @@
     
 }
 
+@media screen and (min-width:1000px){
+    .s-courses__cards-container::-webkit-scrollbar{
+        display: block;
+    }
+}
+
 
 
 
