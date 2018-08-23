@@ -24,6 +24,7 @@
 }
 .s-system__main{
     color: var(--color-text-dark);
+    width: 100%;
     display: flex;
 }
 .s-system__menu {
@@ -60,6 +61,7 @@
     width: 200px;
     margin: auto;
     text-align: center;
+    position: relative;
 }
 .s-system__text-link::after{
     content: "";
@@ -68,6 +70,9 @@
     background-color: var(--color-sky);
     display: none;
     margin: auto;
+    margin-top: 4px;
+    position: absolute;
+    left: 75px;
 }
 
 .s-system__submenu{
@@ -78,13 +83,19 @@
 }
 .s-system__submenu-item{
     margin: 10px;
+    font-weight: lighter;
+}
+.s-system__submenu-item:hover{
+    font-weight: bold;
 }
 
 .s-system__footer{
     z-index: 1;
     position: relative;
-    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     color: var(--color-text-dark);
+    background: url("../../../assets/img/ufaber-bg.jpg");
 }
 .s-system__footer-text{
     padding: 10px 30px;
@@ -104,7 +115,7 @@
     position: absolute;
     height: 165px;
     width: 130px;
-    bottom: -70px;
+    bottom: -40px;
     right: -55px;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -121,6 +132,77 @@
     .s-system__headphone{
         display: none;
     }
+    .s-system__footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .s-system__footer-description{
+        margin: auto;
+    }
 }
+
+@media screen and (min-width:860px){
+    .s-system{
+        padding: 0px 30px;
+    }
+    .s-system__header{
+        align-items: flex-start;
+        text-align: start;
+        height: 15%;
+        padding: 30px;
+    }
+    .s-system__menu{
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .s-system__menu-item{
+        width: 30%;
+        padding: 0px 20px;
+    }
+
+    .s-system__item-link{
+        display: inline;
+    }
+    .s-system__submenu{
+        display: flex;
+        align-items: flex-start;
+    }
+    .s-system__text-link{
+        text-align: start;
+        margin: 0;
+        padding: 0px 8px;
+    }
+    .s-system__text-link::after{
+        left: 8px;
+    }
+
+    .s-system__headphone{
+        height: 300px;
+        width: 280px;
+        bottom: -110px;
+        right: -12px;
+    }
+    .s-system__menu-item:hover{
+        background-color: transparent;
+    }
+    .s-system__menu-item:hover .s-system__submenu{
+        background-color: transparent;
+    }
+    .s-system__menu-item:hover .s-system__submenu-item{
+        background-color: transparent;
+    }
+
+
+
+    
+
+}
+
+
+
 
 

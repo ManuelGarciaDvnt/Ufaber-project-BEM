@@ -1,7 +1,7 @@
 .s-slider{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     /* background-color: rgb(161, 161, 161); */
 }
