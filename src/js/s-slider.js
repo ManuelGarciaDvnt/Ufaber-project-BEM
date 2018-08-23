@@ -31,6 +31,10 @@
             var index=$this.data("index");
             console.log(st.sliderData[index]);
             
+        },
+        togleButtons : function(){
+            var $this=$(this);
+            
         }
         
     }
@@ -49,12 +53,10 @@
                 };
                 st.sliderData[index] = item;
             });            
-            console.log(st.sliderData[0].srcImage);
+            // console.log(st.sliderData[0].srcImage);
         },
         loadSentences(){
-            for(i=0;i<sliderData.length;i++){
-                dom.image.attr('src',st.sliderData[i].srcImage);
-            }
+            
         }
 
     }
