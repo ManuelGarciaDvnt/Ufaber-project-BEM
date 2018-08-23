@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     color: var(--color-text-dark);
-    width: 180px;
+    width: 185px;
 }
 .e-button__text{
     margin: 0 5px;
@@ -26,6 +26,15 @@
     background-color: var(--color-sky);
     color: var(--color-text-light);
 }
+.e-button.e-button--amber{
+    background-color: var(--color-amber);
+    color: var(--color-text-light);
+}
+.e-button.e-button--amber:active{
+    background: rgba(240,108,0,1);
+    
+}
+
 .e-button.e-button--transparent{
     color: var(--color-text-light);
     background-color: var(--color-gray-transparent);
