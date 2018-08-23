@@ -1,4 +1,15 @@
 .s-stories{
     height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s-stories__process{
+    width: 300px;
+    height: 300px;
+}
+.s-stories__process img{
+    width: 100%;
+    height: 100%;
 }
