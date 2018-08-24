@@ -40,6 +40,7 @@
 
 .s-system__menu-item:hover .s-system__submenu{
     display: flex;
+    height: 190px;
     background-color: var(--color-gray-light);
     transition-duration: .3s;
 }
@@ -76,10 +77,16 @@
 }
 
 .s-system__submenu{
-    display: none;
+    height: 0px;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -ms-transition:all .5s;
+    -o-transition:all .5s;
 }
 .s-system__submenu-item{
     margin: 10px;
