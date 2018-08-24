@@ -1,7 +1,7 @@
 .s-slider{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     /* background-color: rgb(161, 161, 161); */
 }
@@ -142,6 +142,7 @@
         -o-transform:rotate(90deg);
 }
     100%{
+        opacity: 0;
         transform:rotate(180deg);
         top: 1000px;
         -webkit-transform:rotate(180deg);
