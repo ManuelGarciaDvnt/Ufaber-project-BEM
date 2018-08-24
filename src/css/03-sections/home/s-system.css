@@ -1,5 +1,6 @@
 .s-system{
     height: 100vh;
+    /* min-height: 1500px; */
     width: 100%;
     background: url("../../../assets/img/ufaber-bg.jpg");
     background-size: cover;
@@ -36,7 +37,6 @@
 .s-system__menu-item{
     border-bottom: solid 1px var(--color-gray-light);
 }
-
 
 .s-system__menu-item:hover .s-system__submenu{
     display: flex;
@@ -90,12 +90,11 @@
 }
 
 .s-system__footer{
-    z-index: 1;
     position: relative;
     padding-top: 40px;
     padding-bottom: 30px;
     color: var(--color-text-dark);
-    background: url("../../../assets/img/ufaber-bg.jpg");
+    /* background: url("../../../assets/img/ufaber-bg.jpg"); */
 }
 .s-system__footer-text{
     padding: 10px 30px;
