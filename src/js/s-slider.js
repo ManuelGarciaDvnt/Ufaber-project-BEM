@@ -41,6 +41,7 @@
             var lastcard_new= $('.s-slider__card:last');
             var firtscard_new=$('.s-slider__card:first');
             dom.containerCard.prepend(lastcard_new);
+            $(firtscard_new).addClass("s-slider__slide-card");
             $(firtscard_new).removeClass("s-slider__card--top");
             $(lastcard_new).removeClass("s-slider__card--central");
 
@@ -53,6 +54,8 @@
             $(previewcard).addClass("s-slider__card--central");
 
             
+            
+
         }
         ,
         togleButtons : function(){
