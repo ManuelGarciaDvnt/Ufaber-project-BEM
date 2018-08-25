@@ -8,6 +8,8 @@
     itemLink       : '.js-slider__link',
     textBox        : '.js-slider__text-box',
     active         : 'js-isActive',
+    firstcard      : '.s-slider__card:first',
+    lastcard       : '.s-slider__card:last',
     //imagenes a utilizar
     sliderData     : []
     }
@@ -19,6 +21,8 @@
         dom.itemList      = $(st.itemList);
         dom.itemLink      = $(st.itemLink,dom.itemList);
         dom.textBox       = $(st.textBox);
+        dom.firstcard     = $(st.firstcard);
+        dom.lastcard      = $(st.lastcard);
     }
 
     var suscribeEvents=function(){
@@ -29,9 +33,28 @@
         changeUrl : function(){
             var $this=$(this);
             var index=$this.data("index");
-            console.log(st.sliderData[index]);
+            // console.log(st.sliderData[index]);
+            console.log("ruta de la imagen: "+st.sliderData[index].srcImage);
+            var ruta=st.sliderData[index].srcImage;
+            dom.card.last().removeClass("s-slider__card--top");
+
+            var lastcard_new= $('.s-slider__card:last');
+            var firtscard_new=$('.s-slider__card:first');
+            dom.containerCard.prepend(lastcard_new);
+            $(firtscard_new).removeClass("s-slider__card--top");
+            $(lastcard_new).removeClass("s-slider__card--central");
+
+            //Captura de la actual ultima tarjeta
+            var lcard=$('.s-slider__card:last');
+            $(lcard).removeClass("s-slider__card--central");
+            $(lcard).addClass("s-slider__card--top");
+            //Captura la tarjeta hermana de la ultima tarjeta
+            var previewcard=$(lcard.prev());
+            $(previewcard).addClass("s-slider__card--central");
+
             
-        },
+        }
+        ,
         togleButtons : function(){
             var $this=$(this);
             
