@@ -40,7 +40,7 @@
     user-select: none;
 }
 .s-courses__cards-container::-webkit-scrollbar{
-    display: none;
+    max-height: 0px;
 }
 
 
@@ -192,9 +192,11 @@
 }
 
 @media screen and (min-width:1000px){
-    .s-courses__cards-container::-webkit-scrollbar{
-        display: block;
-    }
+    
+    
+    
+
+
 }
 
 

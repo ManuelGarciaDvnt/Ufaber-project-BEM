@@ -1,5 +1,5 @@
 .s-system{
-    height: 100vh;
+    min-height: 100vh;
     /* min-height: 1500px; */
     width: 100%;
     background: url("../../../assets/img/ufaber-bg.jpg");
@@ -40,7 +40,6 @@
 
 .s-system__menu-item:hover .s-system__submenu{
     display: flex;
-    height: 190px;
     background-color: var(--color-gray-light);
     transition-duration: .3s;
 }
@@ -77,7 +76,8 @@
 }
 
 .s-system__submenu{
-    height: 0px;
+    display: none;
+    height: 100%;
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
