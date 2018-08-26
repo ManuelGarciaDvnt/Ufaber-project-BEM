@@ -32,8 +32,8 @@
     }
 
     var events={
-        changeUrl : function(element){
-            var $this = $(element);
+        changeUrl : function(){
+            var $this=$(this);
             var index=$this.data("index");
             // console.log(st.sliderData[index]);
             var ruta=st.sliderData[index].srcImage;
