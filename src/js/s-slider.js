@@ -32,14 +32,14 @@
     }
 
     var events={
-        changeUrl : function(){
-            var $this=$(this);
+        changeUrl : function(element){
+            var $this = $(element);
             var index=$this.data("index");
             // console.log(st.sliderData[index]);
             var ruta=st.sliderData[index].srcImage;
             
             var label = $('<figure class="s-slider__picture"><img class="s-slider__image" src="' + ruta + '"></figure>');
-            console.log("ruta de la imagen: "+ruta);
+            
             
             dom.card.last().removeClass("s-slider__card--top");
 
@@ -61,8 +61,6 @@
             var previewcard=$(lcard.prev());
             $(previewcard).addClass("s-slider__card--central");
 
-            
-            console.log(label);
         }
 
         ,
@@ -73,14 +71,19 @@
             dom.textBox.text(paragraph);
         },
         sliderPlay : function() {
-            console.log('jsdjasd');
-            
+            var isActive = $(".is-active .js-slider__link").parents('.js-slider__list-item');
+            if($(isActive).next().length > 0){
+                $(isActive).next().children('.js-slider__link').trigger('click'); 
+            }
+            else {
+                dom.itemLink.eq(0).trigger('click'); 
+            }
+
         },
         activeLink : function(){
             dom.itemList.removeClass("is-active");
             $(this).parent().addClass("is-active");
             console.log($(this));
-            
         }
     }
 
@@ -101,12 +104,13 @@
         },
         loadSentences(){
             console.log('dasdj');
-            
         },
         sliderAuto(){
-            setInterval(events.sliderPlay, 1000);    
-        }
+            setInterval(events.sliderPlay, 2200);    
+        },
+        animate(){
 
+        }
 
     }
 
@@ -116,7 +120,7 @@
         fn.loadSliderData();
         console.log(st.sliderData);
         fn.sliderAuto();
-        
+        $(dom.itemLink[0]).trigger('click');
     }
 
     initialice();
