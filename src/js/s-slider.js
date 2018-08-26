@@ -83,7 +83,7 @@
         activeLink : function(){
             dom.itemList.removeClass("is-active");
             $(this).parent().addClass("is-active");
-            console.log($(this));
+            // console.log($(this));
         }
     }
 
