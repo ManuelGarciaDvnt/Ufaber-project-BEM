@@ -133,7 +133,7 @@
     background-color: var(--color-sky);
     height: 20px;
     width: 1px;
-    z-index: 100;
+    z-index: 20;
 }
 
 .s-slider__list-item.is-active::before{
