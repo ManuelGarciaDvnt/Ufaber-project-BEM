@@ -12,11 +12,17 @@
 }
 .e-button__text{
     margin: 0 5px;
+    font-size: 14px;
 }
 .e-button__icon{
     height: 14px;
     width: 14px;
     fill: var(--color-text-light);
+}
+.e-button__icon--dark{
+    height: 14px;
+    width: 14px;
+    fill: var(--color-text-dark);
 }
 .e-button.e-button--green{
     background-color: var(--color-green);
