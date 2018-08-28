@@ -236,7 +236,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
     }
     .s-slider__main{
         height: 459px;
