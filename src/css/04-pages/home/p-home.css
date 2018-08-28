@@ -8,17 +8,18 @@
 @import '../../03-sections/home/s-stories.css';
 @import '../../03-sections/all/s-footer.css';
 
+
 .s-cover{
     background: url("../../../assets/img/ufaber-bg-phone.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 .s-slider{
     background: url("../../../assets/img/ufaber-bg.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 @media screen and (min-width:610px){

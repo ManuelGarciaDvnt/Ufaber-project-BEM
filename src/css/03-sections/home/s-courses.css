@@ -26,6 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 55px;
 }
 .s-courses__cards-container{
     height: 100%;
@@ -42,7 +43,6 @@
 .s-courses__cards-container::-webkit-scrollbar{
     max-height: 0px;
 }
-
 
 .s-courses__card{
     background-color: rgb(255, 255, 255);
@@ -172,7 +172,6 @@
 
 .s-courses__footer{
     width: 100%;
-    position: absolute;
     bottom: 0px;
     margin-bottom: 50px;
 }
