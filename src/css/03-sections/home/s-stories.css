@@ -112,6 +112,8 @@
     background-position: 0px 372px;
     top: 40%;
     left: 45%;
+    opacity: 0;
+    cursor: pointer;
 }
 .s-stories__opinion{
     padding: 20px;
@@ -164,6 +166,9 @@
     min-width: 180px;
     transition-duration: 1s;
 }
+.s-stories__activator:checked + .s-stories__activator-media .s-stories__card .s-stories__media .s-stories__media-icon{
+    opacity: 1;
+}
 
 
 
@@ -185,7 +190,8 @@
     }
     .s-stories__container{
         display: flex;
-        min-height: 150px;
+        min-height: 205px;
+        max-height: 205px;
     }
     .s-stories__card{
         flex-direction: row;
