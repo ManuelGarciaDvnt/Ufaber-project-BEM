@@ -1,0 +1,21 @@
+.e-link{
+    display: flex;
+    min-width: 150px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+.e-link__icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /* background-color: red; */
+    background: url("../../assets/icons/icons.png");
+    /* background-position: -36px 429px; */
+}
+.e-link__icon--phone{
+    background-position: -4px 431px;
+}
+.e-link__icon--plane{
+    background-position: -36px 429px;
+}

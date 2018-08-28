@@ -2,4 +2,112 @@
     min-height: 100vh;
     background-color: var(--color-background-dark);
     color: var(--color-text-light);
+    padding: 10px;
 }
+.s-footer__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.s-footer__quick{
+    width: 100%;
+    border-bottom: solid 1px var(--color-text-dark);
+}
+.s-footer__title{
+    padding: 12px;
+}
+.s-footer__description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 13px;
+}
+.s-footer__option{
+    min-width: 100px;
+    margin: 1px 25px 8px 4px;
+}
+.s-footer__option-link:hover{
+    color: var(--color-sky);
+}
+.s-footer__support{
+    width: 100%;
+    height: 200px;
+    border-bottom: solid 1px var(--color-text-dark);
+}
+.s-footer__contact{
+    padding: 10px;
+    font-size: 13px;
+}
+.s-footer__links-container{
+    margin-bottom: 20px;
+}
+.s-footer__about{
+    border-bottom: solid 1px var(--color-text-dark);
+}
+.s-footer__information{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.s-footer__adress{
+    padding: 10px;
+    display: flex;
+}
+.s-footer__adress-icon{
+    height: 30px;
+    min-width: 30px;
+    margin-right: 20px;
+    background: url("../../../assets/icons/icons.png");
+    background-position: 0px 496px;
+}
+
+.s-footer__adress-info{
+    display: flex;
+    flex-direction: column;
+}
+.s-footer__adress-text{
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+.s-footer__license{
+    font-size: 11px;
+    color: var(--color-text-dark);
+}
+
+
+.s-footer__social-links{
+    display: flex;
+    justify-content: center;
+}
+.s-footer__social-link{
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+.s-footer__social-icon{
+    width: 100%;
+    height: 100%;
+    background: url("../../../assets/icons/icons.png");
+}
+.s-footer__social-icon.s-footer__facebook-icon{
+    background-position: -31px 31px;
+}
+.s-footer__social-icon.s-footer__twitter-icon{
+    background-position: -1px 31px;
+}
+.s-footer__social-icon.s-footer__google-icon{
+    background-position: -63px 31px;
+}
+.s-footer__social-icon.s-footer__linkedin-icon{
+    background-position: -95px 31px;
+}
+
+
+
+
