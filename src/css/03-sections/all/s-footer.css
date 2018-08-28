@@ -139,11 +139,13 @@
         padding: 0;
     }
 
-
     .s-footer__about{
         border-right: none;
     }
-
+    .s-footer__information{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
 
 
