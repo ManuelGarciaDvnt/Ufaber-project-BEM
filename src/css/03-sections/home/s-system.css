@@ -207,9 +207,9 @@
         left: 8px;
     }
     .s-system__headphone{
-        height: 300px;
+        height: 311px;
         width: 280px;
-        bottom: 720px;
+        bottom: -108px;
         right: -12px;
     }
     .s-system__menu-item:hover{

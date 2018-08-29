@@ -36,8 +36,9 @@
     display: flex;
     justify-content: flex-start;
     padding: 0px 30px;
-    overflow: auto;
+    overflow-x: auto;
     flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
     margin-right: 30px;
     user-select: none;
 }
