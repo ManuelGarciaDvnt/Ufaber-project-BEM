@@ -20,7 +20,8 @@
 }
 .s-courses__main{
     height: 55vh;
-    max-height: 450px;
+    min-height: 400px;
+    max-height: 405px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -45,6 +46,7 @@
 }
 
 .s-courses__card{
+    position: relative;
     background-color: rgb(255, 255, 255);
     height: 99%;
     max-width: 300px;
@@ -53,7 +55,6 @@
     box-shadow: 0 0 9px var(--color-text-dark);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     user-select: none;
     border-radius: 2%;
     -webkit-border-radius: 2%;
@@ -64,7 +65,15 @@
 .s-courses__cover{
     height: 50%;
     position: relative;
+    margin-bottom: 20px;
+    filter: grayscale(0.86);
+    -webkit-filter: grayscale(0.86);
 }
+.s-courses__cover--favorite{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
 .s-courses__cover-image{
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
@@ -87,6 +96,7 @@
 .s-courses__heart--active{
     background-position: -31px 341px;
 }
+
 .s-courses__course{
     padding: 1px;
 }
@@ -109,15 +119,13 @@
 .s-courses__stars{
     padding: 10px 10px;
     margin-right: 20px;
+    width: 168px;
 }
 .s-courses__icon-star{
-    width: 10px;
-    height: 10px;
+    width: 18px;
+    height: 18px;
     float: right;
-    background: url("../../../assets/icons/icons.png");
-    background-position: 0px 279px;
     margin-right: 7px;
-    background-color: yellow;
 }
 .s-courses__views{
     height: 30px;
@@ -131,6 +139,9 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
 .s-courses__students{
     display: flex;

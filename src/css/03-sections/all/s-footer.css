@@ -13,7 +13,29 @@
 }
 .s-footer__category{
     border-bottom: solid 1px var(--color-text-dark);
+    position: relative;
 }
+.s-footer__support::before{
+    display: block;
+    content: "";
+    height: 180px;
+    width: 1px;
+    background-color: var(--color-text-dark);
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+}
+.s-footer__quick::before{
+    display: block;
+    content: "";
+    height: 180px;
+    width: 1px;
+    background-color: var(--color-text-dark);
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+}
+
 .s-footer__quick{
     width: 100%;
 }
@@ -44,8 +66,14 @@
     font-size: 13px;
 }
 .s-footer__links-container{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
+.s-footer__button-container{
+    display: flex;
+}
+
 .s-footer__information{
     display: flex;
     flex-direction: column;
@@ -77,7 +105,6 @@
     color: var(--color-text-dark);
 }
 
-
 .s-footer__social-links{
     display: flex;
     justify-content: center;
@@ -100,16 +127,31 @@
     background-position: -1px 31px;
 }
 .s-footer__social-icon.s-footer__google-icon{
-    background-position: -63px 31px;
+    background-position: -63px 30px;
 }
 .s-footer__social-icon.s-footer__linkedin-icon{
-    background-position: -95px 31px;
+    background-position: -95px 30px;
+}
+@media screen and (min-width: 450px){
+    .s-footer__links-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .s-footer__button-container{
+        justify-content: center;
+    }
+
 }
 
 @media screen and (min-width: 560px) and (max-width: 859px){
     .s-footer__description{
         justify-content: flex-start;
     }
+    .s-footer__links-container{
+        justify-content: center;
+    }
+
 }
 
 @media screen and (min-width: 860px){
@@ -125,18 +167,30 @@
     }
     .s-footer__category{
         border-bottom: none;
-        border-right: solid 1px var(--color-text-dark);
         min-width: 30%;
         min-height: 240px;
     }
     .s-footer__option{
         margin-right: 8px;
     }
+    .s-footer__quick::before{
+        opacity: 1;
+    }
+    .s-footer__support::before{
+        opacity: 1;
+    }
+
     .s-footer__support,.s-footer__about{
         padding-left: 20px;
     }
     .s-footer__contact{
         padding: 0;
+    }
+    .s-footer__links-container{
+        flex-direction: column;
+    }
+    .s-footer__button-container{
+        justify-content: flex-start;
     }
 
     .s-footer__about{

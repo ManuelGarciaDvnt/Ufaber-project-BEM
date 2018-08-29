@@ -198,6 +198,7 @@
 @media screen and (max-width:350px){
     .s-slider__main{
         width: 98%;
+        min-width: 234px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -205,7 +206,7 @@
     }
     .s-slider__card{
         height: 100%;
-        width: 90%;
+        width: 95%;
         padding-bottom: 20%;
     }
 }
@@ -265,10 +266,11 @@
         background-color: rgba(255, 0, 0, 0);
     }
     .s-slider__list-item:before{
-        left: -45px;
+        left: -38px;
+        z-index: 1;
         top: 10px;
         height: 2px;
-        width: 30px;
+        width: 24px;
     }
 
     .s-slider__list-links{

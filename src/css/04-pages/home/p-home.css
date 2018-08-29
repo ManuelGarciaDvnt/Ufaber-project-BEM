@@ -10,6 +10,10 @@
 @import '../../03-sections/all/s-footer.css';
 
 
+.p-home__sections{
+    position: relative;
+    overflow: hidden;
+}
 .s-cover{
     background: url("../../../assets/img/ufaber-bg-phone.jpg");
     background-size: cover;

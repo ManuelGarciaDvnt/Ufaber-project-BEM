@@ -1,5 +1,5 @@
 .s-system{
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
     background: url("../../../assets/img/ufaber-bg.jpg");
     background-size: cover;
@@ -128,10 +128,11 @@
     padding: 0px 25px;
 }
 .s-system__headphone{
+    /* display: none; */
     position: absolute;
     height: 165px;
     width: 130px;
-    bottom: -40px;
+    bottom: -45px;
     right: -55px;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -208,7 +209,7 @@
     .s-system__headphone{
         height: 300px;
         width: 280px;
-        bottom: -110px;
+        bottom: 720px;
         right: -12px;
     }
     .s-system__menu-item:hover{
