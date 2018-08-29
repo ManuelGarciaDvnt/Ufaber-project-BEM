@@ -6,14 +6,11 @@
     <meta name="description" content="Home principal">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/slick.js"></script>
     <link rel="stylesheet" href="../css/04-pages/home/p-home.css">
-    <link rel="stylesheet" href="../css/00-toolbox/slick.css">
-    <link rel="stylesheet" href="../css/00-toolbox/slick-theme.css">
     <title>Ufaber - Home</title>
 </head>
 <body>
-    <header id="s-header__menu" class="s-header">
+    <header class="s-header js-header">
         <a href="#">
             <figure class="s-header__logo">
                 <img src="../assets/img/ufaber-logo.png" alt="">
@@ -34,8 +31,8 @@
         </nav>
     </header>
 
-    <main class="p-home__sections">
-        <section class="s-cover">
+    <main id="p-home__sections" class="p-home__sections">
+        <section class="p-section s-cover">
             <div class="s-cover__main">
                 <header class="s-cover__title"> 
                     <h1 class="s-cover__text-title">Do you feel like sleeping while learning?</h1>
@@ -61,7 +58,7 @@
                 </div>
             </div>
             <footer class="s-cover__footer">
-                <a href="#page2" class="s-cover__next-section">
+                <a href="javascript:;" class="s-cover__next-section">
                     <i class="s-cover__icon">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 21.825 21.825" style="enable-background:new 0 0 21.825 21.825;" xml:space="preserve">
@@ -74,7 +71,7 @@
                 </a>
             </footer>
         </section>
-        <section id="page2" class="s-slider">
+        <section id="page2" class="p-section s-slider">
             <div class="s-slider__header">
                 <header class="s-slider__title">
                     <h1 class="s-slider__text-title">
@@ -224,7 +221,7 @@
             </figure>
 
         </section>
-        <section id="page3" class="s-courses">
+        <section id="page3" class="p-section s-courses">
             <section class="s-courses__header">
                 <header class="s-courses__title">
                     <h1 class="s-courses__text-title">
@@ -1065,7 +1062,7 @@
             </footer>
 
         </section>
-        <section id="page4" class="s-system">
+        <section id="page4" class="p-section s-system">
             <section class="s-system__header">
                 <header class="s-system__title">
                     <h1 class="s-system__text-title">
@@ -1332,7 +1329,7 @@
 
         </section>
                 
-        <section id="page5" class="s-stories">
+        <section id="page5" class="p-section s-stories">
             <header class="s-stories__header">
                 <div class="s-stories__title">
                     <span class="s-stories__text-title">
@@ -1454,7 +1451,7 @@
         </section>
         
     </main>
-    <footer id="finalsection" class="s-footer">
+    <footer id="finalsection" class="p-section s-footer">
         <section class="s-footer__group">
             <header class="s-footer__category s-footer__quick">
                 <header class="s-footer__title">
@@ -1615,6 +1612,7 @@
 
     </footer>
     <script src="../js/main_home.js"></script>
+    <script src="../js/s-header.js"></script>
     <script src="../js/s-slider.js"></script>
     <script src="../js/s-courses.js"></script>
 </body>
