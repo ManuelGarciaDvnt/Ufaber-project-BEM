@@ -125,9 +125,19 @@
 .s-courses__icon-star{
     width: 18px;
     height: 18px;
-    float: right;
+    float: left;
     margin-right: 7px;
 }
+.s-courses__icon-star svg{
+    fill: var(--color-text-gray);
+}
+/* .s-courses__icon-star svg:hover{
+    fill: var(--color-star);
+} */
+.star--active{
+    fill: var(--color-star);
+}
+
 .s-courses__views{
     height: 30px;
     width: 45%;
