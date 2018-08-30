@@ -1,5 +1,5 @@
 .s-stories{
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -115,11 +115,22 @@
 }
 .s-stories__media{
     width: 100%;
-    height: 46%;
+    min-height: 200px;
     position: relative;
     filter: grayscale(60%);
     -webkit-filter: grayscale(60%);
 }
+.s-stories__cover-1{
+    background: url("../../../assets/img/student1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.s-stories__cover-2{
+    background: url("../../../assets/img/student2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 .s-stories__media-image{
     width: 100%;
     height: 100%;
@@ -195,11 +206,7 @@
     display: block;
 }
 
-.s-stories__activator:checked + .s-stories__activator-media .s-stories__card .s-stories__media{
-    min-height: 95%;
-    min-width: 180px;
-    transition-duration: 1s;
-}
+
 .s-stories__activator:checked + .s-stories__activator-media .s-stories__card .s-stories__media .s-stories__media-icon{
     opacity: 1;
 }
@@ -253,6 +260,12 @@
         transition-duration: .3s;
         min-width: 0vw;
         max-width: 0vw;
+    }
+
+    .s-stories__activator:checked + .s-stories__activator-media .s-stories__card .s-stories__media{
+        min-height: 95%;
+        min-width: 180px;
+        transition-duration: 1s;
     }
 
 

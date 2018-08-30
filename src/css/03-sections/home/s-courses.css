@@ -41,6 +41,10 @@
     margin-right: 30px;
     user-select: none;
 }
+.s-courses__cards-container::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
 
 .s-courses__card{
     position: relative;
@@ -208,11 +212,16 @@
 @media screen and (min-width:1000px){
 
     .s-courses__cards-container::-webkit-scrollbar{
-        background-color: var(--color-text-gray);
+        height: 10px;
     }
     .s-courses__cards-container::-webkit-scrollbar-thumb{
         background-color: var(--color-text-dark);
-    }
+        border-radius: 5px    ;
+        -webkit-border-radius: 5px    ;
+        -moz-border-radius: 5px    ;
+        -ms-border-radius: 5px    ;
+        -o-border-radius: 5px    ;
+}
     .s-courses__cards-container:hover.s-courses__cards-container::-webkit-scrollbar-thumb{
         background-color: var(--color-background-dark);
         border: radius 55px;
@@ -221,7 +230,6 @@
         -moz-border-radius:55px;
         -ms-border-radius:55px;
         -o-border-radius:55px;
-        max-width: 300px;
 }
 
 
