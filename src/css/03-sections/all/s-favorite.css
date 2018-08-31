@@ -1,5 +1,4 @@
 .s-favorite{
-    overflow: hidden;
     min-height: 200px;
     min-width: 300px;
     max-height: 200px;
@@ -11,11 +10,12 @@
     flex-direction: column;
     box-shadow: 0px 0px 6px var(--color-shadow-dark);
     transition-duration: .5s;
-    border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -ms-border-radius: 10px 10px 0px 0px;
-    -o-border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
 }
 .s-favorite:hover{
     bottom: 0px;
@@ -53,6 +53,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 50px;
+    position: absolute;
+    top: 0%;
+    width: 100%;
 }
 .s-favorite__title{
     margin-right: 20px;
@@ -65,35 +69,39 @@
 }
 
 .s-favorite__main{
-    background-color: var(--color-text-gray);
+    padding: 50px 4px 0px 4px;
     min-height: 150px;
-    max-height: 150px;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-text-gray);
 }
 .s-favorite__course-container{
     padding: 12px;
     height: 100%;
+    background-color: var(--color-text-gray);
+    overflow-y: scroll;
+    min-height: 150px;
+    max-height: 150px;
+}
+.s-favorite__course-container::-webkit-scrollbar{
+    background-color: var(--color-text-gray);
+    width: 9px;
+}
+.s-favorite__course-container::-webkit-scrollbar-thumb{
+    background-color: var(--color-background-dark);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .s-favorite__list{
-    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.s-favorite__list::-webkit-scrollbar{
-    width: 4px;
-}
-.s-favorite__list::-webkit-scrollbar-thumb{
-    background-color: black;
-    width: 4px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
+
 
 
 .s-favorite__item{

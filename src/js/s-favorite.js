@@ -4,7 +4,8 @@ $(function(){
     favoriteWindow : '.s-favorite',
     btnHeart : '.js-courses__heart',
     listCourses : '.js-favorite__list',
-    liItem : 's-favorite__item'
+    liItem : 's-favorite__item',
+    liController : 'js-favorite__item'
 
     }
     var dom={}
@@ -12,10 +13,13 @@ $(function(){
         dom.favoriteWindow = $(st.favoriteWindow);
         dom.btnHeart = $(st.btnHeart);
         dom.listCourses = $(st.listCourses);
+        dom.liController = $(st.liController);
     }
     
         var suscribeEvents=function(){
         dom.btnHeart.on('click',events.activeWindow);
+
+        
         }
     
         var events={
@@ -41,10 +45,15 @@ $(function(){
                 $(newLink).attr('href','javascript:;');
                 newItem.appendChild(newLink);
                 $(newItem).attr('class',st.liItem);
+                $(newItem).addClass(st.liController);
                 dom.listCourses.append(newItem);
-
                 
+            },
+            removeCourse : function(){
+
             }
+
+
         }
     
         //funciones reutilizables
