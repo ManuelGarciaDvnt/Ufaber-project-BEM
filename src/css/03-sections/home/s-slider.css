@@ -4,6 +4,9 @@
     flex-direction: column;
     justify-content: space-around;
     position: relative;
+    background: url("../../../assets/img/ufaber-bg.jpg");
+    background-size: cover;
+    background-position: center;
     /* background-color: rgb(161, 161, 161); */
 }
 .s-slider__header{

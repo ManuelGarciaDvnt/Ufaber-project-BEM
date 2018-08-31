@@ -55,8 +55,8 @@
             var path      = $(svg).children();
             var available = $(path).attr('data-available');
             if(available==='true'){
-                for (var i = 0; i < $(this).index()+1; i++) {
-                    //console.log("star cambiada: "+i);
+                for (var i = 0; i <= $(this).index(); i++) {
+                    console.log("star cambiada: "+i);
                     $(path[i]).addClass("star--active");
                 }
             }
@@ -84,21 +84,21 @@
         },
         submitScore : function(){
             var index = $(this).index();
+            console.log("tocaste la estrella :" + index);
+            
             var container = $(this).parent();
             var star = $(container).children('i');
             var svg = $(star).find('svg');
             var path = $(svg).children();
             var available = $(path).attr('data-available');
             if(available==='true'){
-                for (var i = 0; i < index; i++) {
+                for (var i = 0; i <= index; i++) {
                     console.log("se coloreo hasta el indice: "+i);
                     $(path[i]).addClass("star--active");
                 }
                 console.log(available);
                 $(path).attr('data-available','false');
-                for (var i = 5; i >= $(this).index(); i--) {
-                    $(path[i]).removeClass("star--active");
-                }
+                
 
             }
             else if(available==='false'){

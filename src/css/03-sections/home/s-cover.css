@@ -5,6 +5,11 @@
     justify-content: center;
     color: var(--color-text-light);
     position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url("../../../assets/img/ufaber-bg-phone.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .s-cover__main{
     text-align: center;
@@ -47,9 +52,17 @@
 .s-cover__icon:hover{
     opacity: 0.6;
 }
-@media screen and (min-width:860px){
+@media only screen  and (min-width: 610px){
+    .s-cover{
+        background: url("../../../assets/img/ufaber-bg-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width:860px){
     .s-cover__button-container{
-        width: 70%;
         flex-direction: row;
     }
     .s-cover__button-container a{
