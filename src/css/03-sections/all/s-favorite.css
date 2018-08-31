@@ -98,6 +98,7 @@
 
 .s-favorite__item{
     background-color: var(--color-text-light);
+    text-align: center;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -118,6 +119,7 @@
 .s-favorite__item-link{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 
